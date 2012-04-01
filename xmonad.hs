@@ -17,6 +17,7 @@ myConfig = defaultConfig{
      className =? "MPlayer" --> doFullFloat]
 } `additionalKeys`
   [((controlMask,xK_g),spawn "gvim"),
+   ((controlMask,xK_m),spawn "urxvt -e alsamixer"),
    ((controlMask,xK_s),spawn "chromium --disk-cache-dir=/tmp/chrome")]
 
 toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
